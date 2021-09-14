@@ -43,4 +43,4 @@ jobs:
       - name: Run tests
         # Run tests
         run: |
-          npx jest
+          NODE_OPTIONS=--experimental-vm-modules npx jest
