@@ -1,6 +1,6 @@
 import genDiff from '../src/gendiff.js';
 
-test('should return as in the task', () => {
+test('should return as in the tas', () => {
   const file1 = 'file1.json';
   const file2 = 'file2.json';
 
