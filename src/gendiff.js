@@ -20,15 +20,15 @@ export default (path1, path2) => {
     const [key, value] = element;
     if (_.has(file1, key) && _.has(file2, key)) {
       if (file1[key] === value && file2[key] === value) {
-        return `  ${key} : ${value}\n`;
+        return `    ${key} : ${value}\n`;
       }
       if (!_.isEqual(file1[key], file2[key])) {
-        return `- ${key} : ${file1[key]}\n+ ${key} : ${value}\n`;
+        return `  - ${key} : ${file1[key]}\n  + ${key} : ${value}\n`;
       }
     } else if (!_.has(file1, key) && _.has(file2, key) && file2[key] === value) {
-      return `+ ${key} : ${value}\n`;
+      return `  + ${key} : ${value}\n`;
     }
-    return `- ${key} : ${value}\n`;
+    return `  - ${key} : ${value}\n`;
   };
   const mergedObject = _.orderBy(Object.entries({ ...file1, ...file2 }), [0], ['asc']).map((node) => compareFiles(node));
   return `{\n${mergedObject.join('').slice(0, mergedObject.join('').length - 1)}\n}`;
