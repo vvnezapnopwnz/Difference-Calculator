@@ -1,11 +1,14 @@
 {
   "name": "@hexlet/code",
+  "bin": {
+    "gendiff": "bin/gendiff.js"
+  },
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/vvnezapnopwnz/backend-project-lvl2/workflows/hexlet-check/badge.svg?branch=)](https://github.com/vvnezapnopwnz/backend-project-lvl2/actions?query=branch:)",
   "main": "gendiff.js",
   "type": "module",
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --coverage"
+    "test": "npx jest ."
   },
   "repository": {
     "type": "git",

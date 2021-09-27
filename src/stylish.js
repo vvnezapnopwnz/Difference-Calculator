@@ -12,7 +12,7 @@ const stringify = (data, indentSize) => {
 
 export default (tree) => {
   const iter = (nestedTree, indentSize = 0) => {
-    const lines = nestedTree.map((node) => {
+    const lines = nestedTree.flatMap((node) => {
       const {
         type, key, after, before, children,
       } = node;
@@ -27,7 +27,7 @@ export default (tree) => {
       }
       return `${' '.repeat(indentSize + 2)}- ${key}: ${stringify(before, indentSize + 4)}\n${' '.repeat(indentSize + 2)}+ ${key}: ${stringify(after, indentSize + 2)}`;
     });
-    const result = ['{', ...lines.flat(), `${' '.repeat(indentSize)}}`].join('\n');
+    const result = ['{', ...lines, `${' '.repeat(indentSize)}}`].join('\n');
     return result;
   };
   return iter(tree);
