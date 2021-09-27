@@ -1,65 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1632641626658" clover="3.2.0">
-  <project timestamp="1632641626658" name="All files">
-    <metrics statements="47" coveredstatements="40" conditionals="25" coveredconditionals="19" methods="11" coveredmethods="10" elements="83" coveredelements="69" complexity="0" loc="47" ncloc="47" packages="1" files="4" classes="4"/>
+<coverage generated="1632757179017" clover="3.2.0">
+  <project timestamp="1632757179017" name="All files">
+    <metrics statements="99" coveredstatements="97" conditionals="34" coveredconditionals="33" methods="8" coveredmethods="8" elements="141" coveredelements="138" complexity="0" loc="99" ncloc="99" packages="1" files="4" classes="4"/>
     <file name="compareFiles.js" path="/mnt/c/Users/vvnez/Desktop/hexlet/backend-project-lvl2/src/compareFiles.js">
-      <metrics statements="13" coveredstatements="12" conditionals="10" coveredconditionals="8" methods="2" coveredmethods="2"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="4" count="2" type="stmt"/>
-      <line num="5" count="2" type="stmt"/>
-      <line num="6" count="10" type="cond" truecount="2" falsecount="0"/>
-      <line num="7" count="4" type="stmt"/>
-      <line num="11" count="6" type="cond" truecount="2" falsecount="0"/>
-      <line num="12" count="2" type="stmt"/>
-      <line num="16" count="4" type="cond" truecount="2" falsecount="2"/>
-      <line num="17" count="0" type="stmt"/>
-      <line num="21" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="22" count="2" type="stmt"/>
-      <line num="26" count="2" type="stmt"/>
-      <line num="31" count="2" type="stmt"/>
+      <metrics statements="34" coveredstatements="34" conditionals="11" coveredconditionals="11" methods="1" coveredmethods="1"/>
+      <line num="1" count="10" type="cond" truecount="1" falsecount="0"/>
+      <line num="2" count="10" type="stmt"/>
+      <line num="3" count="10" type="stmt"/>
+      <line num="4" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="5" count="4" type="stmt"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="7" count="36" type="cond" truecount="1" falsecount="0"/>
+      <line num="8" count="36" type="cond" truecount="1" falsecount="0"/>
+      <line num="9" count="10" type="stmt"/>
+      <line num="10" count="10" type="stmt"/>
+      <line num="11" count="10" type="stmt"/>
+      <line num="12" count="36" type="cond" truecount="1" falsecount="0"/>
+      <line num="13" count="36" type="cond" truecount="2" falsecount="0"/>
+      <line num="14" count="8" type="stmt"/>
+      <line num="15" count="8" type="stmt"/>
+      <line num="16" count="8" type="stmt"/>
+      <line num="17" count="8" type="stmt"/>
+      <line num="18" count="36" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="8" type="stmt"/>
+      <line num="20" count="8" type="stmt"/>
+      <line num="21" count="8" type="stmt"/>
+      <line num="22" count="8" type="stmt"/>
+      <line num="23" count="36" type="cond" truecount="1" falsecount="0"/>
+      <line num="24" count="6" type="stmt"/>
+      <line num="25" count="6" type="stmt"/>
+      <line num="26" count="6" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
     </file>
     <file name="gendiff.js" path="/mnt/c/Users/vvnez/Desktop/hexlet/backend-project-lvl2/src/gendiff.js">
-      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-      <line num="9" count="2" type="stmt"/>
-      <line num="10" count="2" type="stmt"/>
-      <line num="11" count="4" type="stmt"/>
-      <line num="12" count="4" type="stmt"/>
-      <line num="13" count="2" type="stmt"/>
-      <line num="14" count="2" type="stmt"/>
-      <line num="15" count="2" type="stmt"/>
+      <metrics statements="16" coveredstatements="16" conditionals="3" coveredconditionals="3" methods="3" coveredmethods="3"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="9" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="10" count="4" type="stmt"/>
+      <line num="11" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="12" count="2" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
     </file>
     <file name="parsers.js" path="/mnt/c/Users/vvnez/Desktop/hexlet/backend-project-lvl2/src/parsers.js">
-      <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="4" count="4" type="cond" truecount="2" falsecount="2"/>
-      <line num="6" count="2" type="stmt"/>
-      <line num="9" count="2" type="stmt"/>
-      <line num="11" count="0" type="stmt"/>
-    </file>
-    <file name="stylish.js" path="/mnt/c/Users/vvnez/Desktop/hexlet/backend-project-lvl2/src/stylish.js">
-      <metrics statements="22" coveredstatements="17" conditionals="11" coveredconditionals="9" methods="5" coveredmethods="4"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="4" count="12" type="cond" truecount="1" falsecount="1"/>
-      <line num="5" count="12" type="stmt"/>
+      <metrics statements="15" coveredstatements="13" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="1" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="2" count="2" type="stmt"/>
+      <line num="3" count="4" type="cond" truecount="1" falsecount="0"/>
+      <line num="4" count="4" type="cond" truecount="1" falsecount="0"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="6" count="4" type="cond" truecount="0" falsecount="1"/>
       <line num="7" count="0" type="stmt"/>
       <line num="8" count="0" type="stmt"/>
-      <line num="9" count="0" type="stmt"/>
-      <line num="10" count="0" type="stmt"/>
-      <line num="14" count="2" type="cond" truecount="1" falsecount="0"/>
-      <line num="15" count="2" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+    </file>
+    <file name="stylish.js" path="/mnt/c/Users/vvnez/Desktop/hexlet/backend-project-lvl2/src/stylish.js">
+      <metrics statements="34" coveredstatements="34" conditionals="15" coveredconditionals="15" methods="3" coveredmethods="3"/>
+      <line num="1" count="40" type="cond" truecount="2" falsecount="0"/>
+      <line num="2" count="40" type="stmt"/>
+      <line num="3" count="54" type="cond" truecount="1" falsecount="0"/>
+      <line num="4" count="14" type="cond" truecount="1" falsecount="0"/>
+      <line num="5" count="18" type="stmt"/>
+      <line num="6" count="18" type="stmt"/>
+      <line num="7" count="18" type="stmt"/>
+      <line num="8" count="14" type="stmt"/>
+      <line num="9" count="1" type="cond" truecount="2" falsecount="0"/>
+      <line num="10" count="10" type="stmt"/>
+      <line num="11" count="10" type="stmt"/>
+      <line num="12" count="10" type="stmt"/>
+      <line num="13" count="10" type="stmt"/>
+      <line num="14" count="10" type="cond" truecount="1" falsecount="0"/>
+      <line num="15" count="36" type="stmt"/>
+      <line num="16" count="36" type="stmt"/>
+      <line num="17" count="36" type="cond" truecount="1" falsecount="0"/>
       <line num="18" count="10" type="stmt"/>
-      <line num="19" count="10" type="cond" truecount="2" falsecount="0"/>
-      <line num="20" count="2" type="stmt"/>
-      <line num="21" count="8" type="cond" truecount="2" falsecount="0"/>
-      <line num="22" count="4" type="stmt"/>
-      <line num="23" count="4" type="cond" truecount="1" falsecount="1"/>
-      <line num="24" count="0" type="stmt"/>
-      <line num="25" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="26" count="2" type="stmt"/>
-      <line num="28" count="2" type="stmt"/>
-      <line num="30" count="2" type="stmt"/>
-      <line num="31" count="2" type="stmt"/>
-      <line num="33" count="2" type="stmt"/>
+      <line num="19" count="10" type="stmt"/>
+      <line num="20" count="36" type="cond" truecount="2" falsecount="0"/>
+      <line num="21" count="4" type="stmt"/>
+      <line num="22" count="36" type="cond" truecount="2" falsecount="0"/>
+      <line num="23" count="8" type="stmt"/>
+      <line num="24" count="36" type="cond" truecount="2" falsecount="0"/>
+      <line num="25" count="6" type="stmt"/>
+      <line num="26" count="36" type="cond" truecount="1" falsecount="0"/>
+      <line num="27" count="8" type="stmt"/>
+      <line num="28" count="10" type="stmt"/>
+      <line num="29" count="10" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
