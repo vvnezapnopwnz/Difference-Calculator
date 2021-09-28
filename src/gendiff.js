@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import parse from './parsers.js';
 import compareFiles from './compareFiles.js';
 import stylish from './stylish.js';
+import plain from './plain.js';
 
 export default (path1, path2) => {
   const __filename = fileURLToPath(import.meta.url);
@@ -12,5 +13,6 @@ export default (path1, path2) => {
   const readFile = (filename) => parse(fs.readFileSync(getFixturePath(filename), 'utf-8'), path.extname(filename));
   const file1 = readFile(path1);
   const file2 = readFile(path2);
-  return stylish(compareFiles(file1, file2));
+  return plain(compareFiles(file1, file2));
+  // return compareFiles(file1, file2);
 };
