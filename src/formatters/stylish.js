@@ -10,7 +10,7 @@ const stringify = (data, indentSize) => {
   return result;
 };
 
-export default (tree) => {
+const stylish =  (tree) => {
   const iter = (nestedTree, indentSize = 0) => {
     const lines = nestedTree.flatMap((node) => {
       const {
@@ -32,3 +32,5 @@ export default (tree) => {
   };
   return iter(tree);
 };
+
+export default stylish;
