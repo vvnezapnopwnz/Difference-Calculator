@@ -5,7 +5,6 @@ import parse from './parsers.js';
 import compareFiles from './compareFiles.js';
 import formatterChooser from './formatters/index.js';
 
-
 export default (path1, path2, format) => {
   const __filename = fileURLToPath(import.meta.url);
   const __dirname = dirname(__filename);

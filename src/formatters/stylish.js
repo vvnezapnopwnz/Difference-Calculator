@@ -10,7 +10,7 @@ const stringify = (data, indentSize) => {
   return result;
 };
 
-const stylish =  (tree) => {
+const stylish = (tree) => {
   const iter = (nestedTree, indentSize = 0) => {
     const lines = nestedTree.flatMap((node) => {
       const {
