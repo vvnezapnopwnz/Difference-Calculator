@@ -25,12 +25,12 @@ const stylish = (tree) => {
       } if (type === 'unchanged') {
         return `${' '.repeat(indentSize + 2)}  ${key}: ${stringify(before, indentSize + 4)}`;
       }
-      return `${' '.repeat(indentSize + 2)}- ${key}: ${stringify(before, indentSize + 4)}\n${' '.repeat(indentSize + 2)}+ ${key}: ${stringify(after, indentSize + 2)}`;
+      return `${' '.repeat(indentSize + 2)}- ${key}: ${stringify(before, indentSize + 4)}\n${' '.repeat(indentSize + 2)}+ ${key}: ${stringify(after, indentSize + 4)}`;
     });
     const result = ['{', ...lines, `${' '.repeat(indentSize)}}`].join('\n');
     return result;
   };
-  return iter(tree);
+  return `${iter(tree)}\n`;
 };
 
 export default stylish;

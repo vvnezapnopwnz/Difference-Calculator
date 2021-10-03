@@ -38,7 +38,7 @@ const plain = (tree) => {
     return _.compact(lines).join('\n');
   };
 
-  return iter(tree, []);
+  return `${iter(tree, [])}\n`;
 };
 
 export default plain;
