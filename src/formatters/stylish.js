@@ -30,7 +30,7 @@ const stylish = (tree) => {
     const result = ['{', ...lines, `${' '.repeat(indentSize)}}`].join('\n');
     return result;
   };
-  return `${iter(tree)}\n`;
+  return `${iter(tree)}`;
 };
 
 export default stylish;
