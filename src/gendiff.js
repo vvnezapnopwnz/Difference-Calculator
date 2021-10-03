@@ -1,8 +1,9 @@
 import * as fs from 'fs';
-import path from 'path';
 import parse from './parsers.js';
 import compareFiles from './compareFiles.js';
 import formatterChooser from './formatters/index.js';
+import path, { dirname } from 'path';
+import { fileURLToPath } from 'url';
 
 export default (path1, path2, format = 'stylish') => {
   const extension1 = path.extname(path1).slice(1);
