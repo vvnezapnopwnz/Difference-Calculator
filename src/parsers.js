@@ -1,22 +1,13 @@
 import yaml from 'js-yaml';
 
 const parse = (data, extension) => {
-  switch (extension) {
-    case 'json':
-      return JSON.parse(data);
-    case 'yaml':
-      return yaml.load(data);
-    case 'yml':
-      return yaml.load(data);
-    case '.json':
-      return JSON.parse(data);
-    case '.yaml':
-      return yaml.load(data);
-    case '.yml':
-      return yaml.load(data);
-    default:
-      throw new Error(`Unknown type: ${extension}`);
+  if (extension === 'json') {
+    return JSON.parse(data);
   }
+  if (extension === 'yaml') {
+    return yaml.load(data);
+  }
+  return yaml.load(data);
 };
 
 export default parse;
