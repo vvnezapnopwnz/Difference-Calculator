@@ -26,7 +26,7 @@ const plain = (tree) => {
         if (type === 'updated') {
           return `Property '${pathToProperty}' was updated. From ${stringify(before)} to ${stringify(after)}`;
         }
-        if (type === 'changed') {
+        if (type === 'nested') {
           return iter(property.children, [...path, key]);
         }
         if (type === 'added') {

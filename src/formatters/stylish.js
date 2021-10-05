@@ -20,7 +20,7 @@ const stylish = (tree) => {
         return `${' '.repeat(indentSize + 2)}+ ${key}: ${stringify(after, indentSize + 4)}`;
       } if (type === 'removed') {
         return `${' '.repeat(indentSize + 2)}- ${key}: ${stringify(before, indentSize + 4)}`;
-      } if (type === 'changed') {
+      } if (type === 'nested') {
         return `${' '.repeat(indentSize + 2)}  ${key}: ${iter(children, indentSize + 4)}`;
       } if (type === 'unchanged') {
         return `${' '.repeat(indentSize + 2)}  ${key}: ${stringify(before, indentSize + 4)}`;
