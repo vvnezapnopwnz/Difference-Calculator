@@ -19,19 +19,21 @@ const iter = (properties, path) => {
         key, after, before, type,
       } = property;
       const pathToProperty = [...path, key].join('.');
-      if (type === 'removed') {
-        return `Property '${pathToProperty}' was removed`;
+      switch (type) {
+        case 'removed':
+          return `Property '${pathToProperty}' was removed`;
+
+        case 'updated':
+          return `Property '${pathToProperty}' was updated. From ${stringify(before)} to ${stringify(after)}`;
+
+        case 'nested':
+          return iter(property.children, [...path, key]);
+
+        case 'added':
+          return `Property '${pathToProperty}' was added with value: ${stringify(after)}`;
+        default:
+          return '';
       }
-      if (type === 'updated') {
-        return `Property '${pathToProperty}' was updated. From ${stringify(before)} to ${stringify(after)}`;
-      }
-      if (type === 'nested') {
-        return iter(property.children, [...path, key]);
-      }
-      if (type === 'added') {
-        return `Property '${pathToProperty}' was added with value: ${stringify(after)}`;
-      }
-      return '';
     });
 
   return _.compact(lines).join('\n');
